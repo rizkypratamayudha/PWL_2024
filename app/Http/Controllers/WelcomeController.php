@@ -21,4 +21,13 @@ class WelcomeController extends Controller
         return "Halaman Article : " .$id;
     }
     
+    // public function greeting(){
+    //     return view('blog.hello',['name' => "Rizky Pratama Yudha ver controller"]);
+    // }
+
+    public function greeting(){
+        return view('blog.hello')
+        ->with('name','Rizky Pratama Yudha')
+        ->with('occupation','Astronout');
+    }
 }
