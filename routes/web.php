@@ -46,7 +46,7 @@ Route::get('/articles/{id}', function ($id){
     return 'Halaman Artikel : '.$id;
 });
 
-//optional parameters
+//optional parameters//
 Route::get('/user/{name?}', function ($name='John'){
     return 'Nama saya '.$name;
 });
